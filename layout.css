@@ -1,0 +1,184 @@
+/**** gælder alle***/
+@media (min-width: 800px) {
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .logotekstalle {
+    font-size: 20px;
+  }
+  .logokna {
+    width: 100px;
+  }
+}
+
+/**** forside **/
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: blue;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+  .logohvid {
+    width: 80px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .forsideover {
+    font-size: 60px;
+  }
+  .g1,
+  .g2,
+  .g3 {
+    font-size: 20px;
+  }
+}
+
+/**********undersidemenuer****/
+@media screen and (max-width: 800px) {
+  header#header2 {
+    background-color: white;
+  }
+  #header2 .menu a {
+    color: #0000ff;
+  }
+
+  #header2 .burger .line {
+    background-color: blue;
+  }
+  .logoblå {
+    width: 70px;
+    height: auto;
+  }
+  header#header2 nav.active .menu {
+    background-color: white;
+  }
+}
+
+/***** historie **/
+@media (min-width: 800px) {
+  .hgrid_1-1 {
+    grid-template-columns: 1fr;
+  }
+  .hgrid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  .opfund,
+  .dan {
+    font-size: 40px;
+  }
+
+  .opfundtekst,
+  .dantekst {
+    font-size: 20px;
+  }
+  .his {
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    place-self: center;
+  }
+  .his2 {
+    padding: 5px;
+  }
+
+  .overhis {
+    font-size: 60px;
+  }
+  .colimgori {
+    height: auto;
+    background-color: white;
+  }
+  .blåhis {
+    height: auto;
+  }
+}
+
+/******Originaler******/
+@media (min-width: 800px) {
+  .oriover {
+    font-size: 60px;
+  }
+  .puchover,
+  .vespaover,
+  .kymcoover {
+    font-size: 40px;
+  }
+  .kymcotek,
+  .vespatek,
+  .puchtek {
+    font-size: 20px;
+  }
+}
+
+/************STILEN********/
+@media (min-width: 800px) {
+  .grid_1-1-1sti {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+  }
+  .sti1 {
+    grid-column: 1;
+  }
+  .sti2 {
+    grid-column: 2;
+  }
+  .sti3 {
+    grid-column: 3;
+  }
+
+  .stiover {
+    font-size: 60px;
+  }
+
+  .oversti {
+    font-size: 40px;
+  }
+  .divsti2 {
+    font-size: 20px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex > :last-child {
+    margin-top: 5px;
+  }
+}
